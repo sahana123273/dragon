@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dragon Doctor Guide — Example</title>
+  <meta name="description" content="A friendly guide site template — hero, cards, articles, FAQ and contact." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="logo" class="brand-logo" />
+        <span class="brand-text">Dragon Doctor Guide</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Everything you need to diagnose and treat dragon ailments</h1>
+          <p class="lead">Step-by-step guides, quick references and practical tools — clear, fast, and ready to use.</p>
+          <p class="hero-actions">
+            <a href="#guides" class="btn btn-primary">View Guides</a>
+            <a href="#tools" class="btn btn-outline">Try Tools</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="dragon doctor illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Guides -->
+    <section id="guides" class="section">
+      <div class="container">
+        <h2 class="section-title">Popular Guides</h2>
+        <p class="section-sub">Curated how-tos and checklists for common conditions.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="assets/card1.jpg" alt="" class="card-img"/>
+            <div class="card-body">
+              <h3>Identifying Scale Rot</h3>
+              <p>Signs, testing protocol, and fast treatments you can do in the field.</p>
+              <a href="#" class="card-link">Read guide →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/card1.jpg" alt="" class="card-img"/>
+            <div class="card-body">
+              <h3>Wing Fracture First Aid</h3>
+              <p>Stabilization and transport checklist for broken wings and talons.</p>
+              <a href="#" class="card-link">Read guide →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/card1.jpg" alt="" class="card-img"/>
+            <div class="card-body">
+              <h3>Burn Management</h3>
+              <p>Cold-water care, dressing, and when to refer to specialists.</p>
+              <a href="#" class="card-link">Read guide →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section id="tools" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Quick Tools</h2>
+        <div class="tools-grid">
+          <div class="tool">
+            <h4>Dosage Calculator</h4>
+            <p>Calculate medication dose by weight.</p>
+            <a class="btn btn-sm" href="#">Open</a>
+          </div>
+          <div class="tool">
+            <h4>Symptom Checker</h4>
+            <p>Answer a few questions and get likely causes.</p>
+            <a class="btn btn-sm" href="#">Open</a>
+          </div>
+          <div class="tool">
+            <h4>Transport Checklist</h4>
+            <p>Printable checklist for emergency transfers.</p>
+            <a class="btn btn-sm" href="#">Open</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-list">
+          <details>
+            <summary>How do I reference diagnostic images?</summary>
+            <p>Upload to your case folder and link images to the guide for comparison — keep originals and annotate copies only.</p>
+          </details>
+          <details>
+            <summary>Can I print guides for field use?</summary>
+            <p>Yes — each guide has a print-friendly version available via the Print button in the top-right of the article.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to collaborate or report an issue, send us a message.</p>
+
+        <!-- Example form. Replace action with your form endpoint (Formspree, Netlify Forms, etc.) -->
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Your email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dragon Doctor Guide — Built with ❤</p>
+      <nav class="footer-nav">
+        <a href="#guides">Guides</a>
+        <a href="#tools">Tools</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
